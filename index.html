@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast - Cheap - Good with Vue.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="form">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="fast" id="fast" value="fast" v-model="checkedBoxes"
+                    @change="controlCheckedBoxes()">
+                <label for="fast">Fast</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="cheap" id="cheap" value="cheap" v-model="checkedBoxes"
+                    @change="controlCheckedBoxes()">
+                <label for="cheap">Cheap</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="good" id="good" value="good" v-model="checkedBoxes"
+                    @change="controlCheckedBoxes()">
+                <label for="good">Good</label>
+            </div>
+        </div>
+        <!--
+        <p>{{ checkedBoxes }}</p>
+        -->
+    </div>
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
